@@ -9,9 +9,6 @@ function encode() {
 
 function updateTemplate() {
 	var encoded = document.getElementById("encoded").value;
-	//debugger;
-	//document.getElementById('templateBody').innerText = `Welcome, ${encoded}.`;
-	//document.getElementById("templateBody").innerHTML = encoded;
 	document.getElementById('templateBody').src = encoded;
 }
 </script>
@@ -19,9 +16,9 @@ function updateTemplate() {
 </HEAD>
 <BODY>
 <h2>Awesome Template Engine!</h2>
-<p><label for="variable">Enter Template Variable Value: <input name="variable" id="variable" /></p>
+<p><label for="variable">Enter Template Variable Value: <input name="variable" id="variable" size=500/></p>
 <p><button id="encode" onclick="encode();">Encode</button>
-<p><label for="encoded" >Encoded Value: <input id="encoded" name="encoded"/></p>
+<p><label for="encoded" >Encoded Value: <input id="encoded" name="encoded" size=500/></p>
 <p><button id="template" onclick="updateTemplate();">Update Template</button>
 <br/>
 <br/>
